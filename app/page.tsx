@@ -1,3 +1,10 @@
+
+import About from "@/components/about";
+import Footer from "@/components/footer";
+import Header from "@/components/header";
+import Hero from "@/components/hero";
+import Location from "@/components/location";
+import Workshop from "@/components/workshop";
 import Image from "next/image";
 
 export default function Home() {
@@ -7,7 +14,7 @@ export default function Home() {
       <main>
         <Hero />
         <About />
-        <Menu />
+        <Workshop />
         <Location />
       </main>
       <Footer />

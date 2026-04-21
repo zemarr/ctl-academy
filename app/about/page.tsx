@@ -2,6 +2,7 @@
 import { motion } from "framer-motion";
 import Image from 'next/image';
 import ctlBanner from '@/public/ctl-banner-img.webp'
+import WorkshopBookingCard from "@/components/workshop-booking-card";
 
 
 const AboutPage = () => {
@@ -40,38 +41,38 @@ const AboutPage = () => {
         <br />
         <div className="mt-8">
           <h3 className="font-black text-center text-background text-3xl uppercase tracking-wide mb-6">In our sessions you will learn to</h3>
-          <div className="grid grid-cols-2 gap-3 mb-12">
+          <div className="grid md:grid-cols-2 grid-cols-1 gap-3 mb-12">
             <motion.div className="">
               <div className="bg-white p-6 h-full border-l-4 border-primary hover:border-l-8 transition-all duration-500 hover:shadow-xl">
-                <p className="text-xl font-medium text-foreground">
+                <p className="md:text-xl text-base font-medium text-foreground">
                   Speak clearly and confidently
                 </p>
               </div>
             </motion.div>
             <motion.div className="">
               <div className="bg-white p-6 h-full border-l-4 border-primary hover:border-l-8 transition-all duration-500 hover:shadow-xl">
-                <p className="text-xl font-medium text-foreground">
+                <p className="md:text-xl text-base font-medium text-foreground">
                   Express yourself without overthinking
                 </p>
               </div>
             </motion.div>
             <motion.div className="">
               <div className="bg-white p-6 h-full border-l-4 border-primary hover:border-l-8 transition-all duration-500 hover:shadow-xl">
-                <p className="text-xl font-medium text-foreground">
+                <p className="md:text-xl text-base font-medium text-foreground">
                   Improve your body language and presence
                 </p>
               </div>
             </motion.div>
             <motion.div className="">
               <div className="bg-white p-6 h-full border-l-4 border-primary hover:border-l-8 transition-all duration-500 hover:shadow-xl">
-                <p className="text-xl font-medium text-foreground">
+                <p className="md:text-xl text-base font-medium text-foreground">
                   Communicate effectively in conversations, meetings, and presentations
                 </p>
               </div>
             </motion.div>
             <motion.div className="">
               <div className="bg-white p-6 h-full border-l-4 border-primary hover:border-l-8 transition-all duration-500 hover:shadow-xl">
-                <p className="text-xl font-medium text-foreground">
+                <p className="md:text-xl text-base font-medium text-foreground">
                   Feel comfortable being seen and heard
                 </p>
               </div>
@@ -86,6 +87,8 @@ const AboutPage = () => {
             Our workshops are interactive, practical, and designed to get you out of your head and into expression.
           </p>
         </div>
+        <WorkshopBookingCard />
+
       </motion.div>
     </div>
   )

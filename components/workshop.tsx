@@ -8,6 +8,9 @@ import shakshukaImage from '../public/06244c169a95043f093144c89f2786568ab2c9a9.p
 import teaImage from '../public/cf5fcb9eafa834916a1baf266d52ce74225cd860.png';
 import { motion, useScroll, useTransform, Variants } from "framer-motion";
 import { useScrollVariable } from "./hooks/useScrollVariable";
+import WorkshopTicket from "./workshop-ticket";
+import Image from "next/image";
+import WorkshopBookingCard from "./workshop-booking-card";
 
 export default function Workshop() {
   const containerRef = useScrollVariable();
@@ -157,7 +160,11 @@ export default function Workshop() {
 
 
         {/* CTA */}
-        <motion.div
+        <h3 className="max-w-prose text-3xl lg:text-5xl font-black text-foreground mb-20 uppercase tracking-tight text-center">Are you ready to transform your life?</h3>
+
+        <WorkshopBookingCard />
+
+        {/* <motion.div
           style={{ y: ctaY }}
           className="text-center bg-linear-to-r from-beige/15 to-beige-dark/20 md:p-16 p-8 py-16 relative overflow-hidden"
         >
@@ -170,14 +177,14 @@ export default function Workshop() {
               Step out of the shadows and into your most confident self. Master the art of presence and learn to communicate with clarity, authority, and impact.
             </p>
             <div className="flex flex-col sm:flex-row gap-6 justify-center">
-              <Button size="lg" className="bg-beige-dark hover:bg-beige-dark/90 text-black hover:shadow-sm px-12 py-6 rounded-none font-semibold tracking-wide uppercase text-base border-2 border-beige-dark transition-all duration-300">
+              <Button size="lg" className="bg-beige-dark hover:bg-beige-dark/90 text-black hover:shadow-sm px-12 py-6 rounded-none font-semibold tracking-wide uppercase text-base border-1 border-beige-dark transition-all duration-300">
                 SECURE YOUR SPOT
               </Button>
             </div>
           </div>
           <div className="absolute -right-20 -top-20 w-80 h-80 bg-primary/10 rounded-full blur-3xl"></div>
           <div className="absolute -left-20 -bottom-20 w-60 h-60 bg-accent/10 rounded-full blur-2xl"></div>
-        </motion.div>
+        </motion.div> */}
       </div>
     </section>
   );

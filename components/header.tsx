@@ -4,6 +4,7 @@ import { Menu, X } from "lucide-react";
 import { useState, useEffect } from "react";
 import { Button } from "./ui/button";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -30,9 +31,9 @@ export default function Header() {
       }`}>
       <div className="max-w-screen mx-auto px-6 lg:px-12">
         <div className="flex h-20 lg:h-24 items-center justify-between">
-          <div className="shrink-0">
-            <Image src="/ctl-logo-full.jpeg" alt="ctl Logo" width={70} height={70} className="rounded-lg aspect-square" />
-          </div>
+          <Link href="/" className="shrink-0">
+            <Image src="/ctl-logo-full.jpeg" alt="ctl Logo" width={70} height={70} className="rounded-lg w-15 h-15 aspect-square" />
+          </Link>
 
           <nav className="hidden lg:flex items-center space-x-12">
             {navItems.map((item) => (
@@ -50,8 +51,8 @@ export default function Header() {
           </nav>
 
           <div className="hidden lg:block">
-            <Button className={`bg-transparent hover:bg-beige-dark/90 hover:text-black text-black ${scrolled ? 'bg-transparent backdrop-blur-xl text-foreground shadow-sm' : 'bg-transparent text-background'
-              } px-8 py-6 rounded-none font-bold tracking-widest uppercase border-2 border-beige-dark transition-all duration-300`}>
+            <Button id="global-eventbrite-trigger" className={`bg-transparent hover:bg-beige-dark/90 hover:text-black text-black ${scrolled ? 'bg-transparent backdrop-blur-xl text-foreground shadow-xs' : 'bg-transparent text-background'
+              } px-8 py-6 rounded-none font-bold tracking-widest uppercase border border-beige-dark transition-all duration-300`}>
               Secure your spot
             </Button>
           </div>
@@ -63,7 +64,7 @@ export default function Header() {
               onClick={() => setIsMenuOpen(!isMenuOpen)}
               className="p-2"
             >
-              {isMenuOpen ? <X className="h-8 w-8" /> : <Menu className="h-8 w-8" />}
+              {isMenuOpen ? <X className="h-8 w-8" /> : <Menu className="h-10 w-16" />}
             </Button>
           </div>
         </div>
@@ -82,7 +83,8 @@ export default function Header() {
                 </a>
               ))}
               <Button
-                className="bg-transparent hover:bg-beige-dark/90 text-black h-auto py-4 rounded-none font-bold tracking-widest uppercase text-lg border-2 border-beige-dark transition-all duration-300 mt-6"
+                id="global-eventbrite-trigger"
+                className="bg-transparent focus-visible:bg-beige-dark/90 focus-visible:ring-0 focus-visible:shadow-none focus-visible:border-0 text-black w-full h-auto py-4 rounded-none font-medium tracking-widest uppercase text-sm border-1 border-beige-dark transition-all duration-300 mt-6"
                 onClick={() => setIsMenuOpen(false)}
               >
                 Secure your spot

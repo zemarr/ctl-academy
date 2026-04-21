@@ -6,10 +6,30 @@ import { Button } from "./ui/button";
 import storefrontImage from '../public/c0127af0ae2b7073d31b017cec0c79cc96f33bbe.png';
 import HeroVideo from "./hero-video";
 import { useScrollVariable } from "./hooks/useScrollVariable";
+import Script from "next/script";
 
 export default function Hero() {
   const containerRef = useScrollVariable();
   const lastScrollRef = useRef(0);
+
+  const [isLoaded, setIsLoaded] = useState(false);
+  const buttonId = `eb-hero-trigger-${process.env.NEXT_PUBLIC_EVENTBRITE_EVENT_ID!}`;
+
+  // const initEventbrite = () => {
+  //   if (window.EBWidgets) {
+  //     window.EBWidgets.createWidget({
+  //       widgetType: 'checkout',
+  //       eventId: process.env.NEXT_PUBLIC_EVENTBRITE_EVENT_ID!,
+  //       modal: true,
+  //       modalTriggerElementId: buttonId,
+  //       onOrderComplete: () => {
+  //         console.log('Order successful.');
+  //         // Optional: window.location.href = '/thank-you';
+  //       },
+  //     });
+  //     setIsLoaded(true);
+  //   }
+  // };
 
   useEffect(() => {
     let requestRef: number;
@@ -102,12 +122,20 @@ export default function Hero() {
               </p>
             </div>
 
+            {/* <Script
+              src="https://www.eventbrite.com/static/widgets/eb_widgets.js"
+              onReady={initEventbrite} // onReady ensures it works even if you navigate back to this page
+            /> */}
+
             {/* CTA Buttons - Kept static for better tap-accuracy */}
             <div className="flex flex-col sm:flex-row justify-center gap-6">
-              <Button size="lg" className="bg-transparent hover:bg-beige-dark/90 hover:text-black text-white hover:shadow-sm px-12 py-6 rounded-none font-semibold tracking-wide uppercase md:text-lg text-base border-2 border-beige-dark transition-all duration-300">
-                SECURE YOUR SPOT
+              <Button
+                id="global-eventbrite-trigger"
+                size="lg"
+                className="bg-transparent hover:bg-beige-dark/90 hover:text-black text-white hover:shadow-sm px-12 py-6 rounded-none font-semibold tracking-wide uppercase md:text-lg text-base border-1 border-beige-dark transition-all duration-300">
+                Secure your spot
               </Button>
-              {/* <Button size="lg" variant="outline" className="border-2 border-white text-white hover:bg-white hover:text-black px-12 py-6 rounded-none font-bold tracking-widest uppercase text-lg transition-all duration-300">
+              {/* <Button size="lg" variant="outline" className="border-1 border-white text-white hover:bg-white hover:text-black px-12 py-6 rounded-none font-bold tracking-widest uppercase text-lg transition-all duration-300">
                 VISIT US
               </Button> */}
             </div>
@@ -118,8 +146,8 @@ export default function Hero() {
               style={{ transform: `translate3d(0, calc(var(--scroll-y) * 0.12), 0)` }}
             >
               <DayCounter targetDate="2026-05-19" label="Days Left" />
-              <StatBlock value="11AM" label="Start time" />
-              <StatBlock value="YES" label="In-Person & Virtual" />
+              <StatBlock value="11 AM" label="Start time" />
+              <StatBlock value="YES" label="Virtual & IRL" />
             </div>
           </div>
         </div>

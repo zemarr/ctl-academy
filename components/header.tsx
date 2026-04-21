@@ -63,7 +63,7 @@ export default function Header() {
               onClick={() => setIsMenuOpen(!isMenuOpen)}
               className="p-2"
             >
-              {isMenuOpen ? <X className="h-8 w-8" /> : <Menu className="h-8 w-8" />}
+              {isMenuOpen ? <X className="h-8 w-8" /> : <Menu className="h-10 w-16" />}
             </Button>
           </div>
         </div>
@@ -82,7 +82,7 @@ export default function Header() {
                 </a>
               ))}
               <Button
-                className="bg-transparent hover:bg-beige-dark/90 text-black h-auto py-4 rounded-none font-bold tracking-widest uppercase text-lg border-2 border-beige-dark transition-all duration-300 mt-6"
+                className="bg-transparent focus-visible:bg-beige-dark/90 focus-visible:ring-0 focus-visible:shadow-none focus-visible:border-0 text-black w-full h-auto py-4 rounded-none font-medium tracking-widest uppercase text-sm border-2 border-beige-dark transition-all duration-300 mt-6"
                 onClick={() => setIsMenuOpen(false)}
               >
                 Secure your spot

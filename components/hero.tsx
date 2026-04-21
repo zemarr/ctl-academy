@@ -118,8 +118,8 @@ export default function Hero() {
               style={{ transform: `translate3d(0, calc(var(--scroll-y) * 0.12), 0)` }}
             >
               <DayCounter targetDate="2026-05-19" label="Days Left" />
-              <StatBlock value="11AM" label="Start time" />
-              <StatBlock value="YES" label="In-Person & Virtual" />
+              <StatBlock value="11 AM" label="Start time" />
+              <StatBlock value="YES" label="Virtual & IRL" />
             </div>
           </div>
         </div>

@@ -8,6 +8,7 @@ import shakshukaImage from '../public/06244c169a95043f093144c89f2786568ab2c9a9.p
 import teaImage from '../public/cf5fcb9eafa834916a1baf266d52ce74225cd860.png';
 import { motion, useScroll, useTransform, Variants } from "framer-motion";
 import { useScrollVariable } from "./hooks/useScrollVariable";
+import WorkshopTicket from "./workshop-ticket";
 
 export default function Workshop() {
   const containerRef = useScrollVariable();
@@ -157,6 +158,9 @@ export default function Workshop() {
 
 
         {/* CTA */}
+        <div>
+          <WorkshopTicket eventId="1987602907802" />
+        </div>
         <motion.div
           style={{ y: ctaY }}
           className="text-center bg-linear-to-r from-beige/15 to-beige-dark/20 md:p-16 p-8 py-16 relative overflow-hidden"

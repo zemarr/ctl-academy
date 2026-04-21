@@ -46,7 +46,7 @@ export default function Location() {
           className="text-center mb-24"
         >
           <span className="text-sm font-bold tracking-[0.3em] text-beige-dark uppercase mb-4 block">
-            JOIN US
+            JOIN US AT
           </span>
           <h2 className="text-5xl lg:text-7xl font-black tracking-tighter text-white mb-8 uppercase leading-none">
             WEMBLEY PARK<br />
@@ -64,7 +64,7 @@ export default function Location() {
             className="space-y-12"
           >
             {/* Address */}
-            <div className="bg-white/5 backdrop-blur-sm border border-white/10 p-10 hover:bg-white/10 transition-all duration-500">
+            <div className="bg-white/5 backdrop-blur-sm border border-white/10 md:p-10 p-4 hover:bg-white/10 transition-all duration-500">
               <div className="flex items-start gap-6 mb-8">
                 <div className="flex items-center justify-center w-16 h-16 bg-primary/20 rounded-none border-2 border-background">
                   <MapPin className="h-8 w-8 text-background" />
@@ -88,7 +88,7 @@ export default function Location() {
             </div>
 
             {/* Hours */}
-            <div className="bg-white/5 backdrop-blur-sm border border-white/10 p-10">
+            <div className="bg-white/5 backdrop-blur-sm border border-white/10 md:p-10 p-4">
               <div className="flex items-center gap-6 mb-8">
                 <div className="flex items-center justify-center w-16 h-16 bg-accent/20 rounded-none border-2 border-accent">
                   <Clock className="h-8 w-8 text-accent" />
@@ -106,11 +106,11 @@ export default function Location() {
                       : 'bg-white/5 border-white/20 hover:border-white/40'
                       }`}
                   >
-                    <span className={`font-bold text-lg uppercase tracking-wide ${schedule.isToday ? 'text-primary' : 'text-white/80'
+                    <span className={`font-bold md:text-lg text-base uppercase tracking-wide whitespace-nowrap ${schedule.isToday ? 'text-primary' : 'text-white/80'
                       }`}>
                       {schedule.day}
                     </span>
-                    <span className={`font-black text-xl ${schedule.isToday ? 'text-primary' : 'text-white'
+                    <span className={`font-medium md:text-xl text-base whitespace-nowrap ${schedule.isToday ? 'text-primary' : 'text-white'
                       }`}>
                       {schedule.hours}
                     </span>
@@ -124,14 +124,14 @@ export default function Location() {
               <div className="bg-white/5 backdrop-blur-sm border border-white/10 p-8 hover:bg-white/10 transition-all duration-500">
                 <BirdIcon className="h-8 w-8 text-background mb-4" />
                 <div className="grid grid-cols-2">
-                  <h4 className="font-black text-white uppercase tracking-wide">EARLY BIRD</h4>
+                  <h4 className="font-bold text-white uppercase tracking-wide">EARLY BIRD</h4>
                   <p className="text-white font-bold text-xl">£25</p>
                 </div>
               </div>
               <div className="bg-white/5 backdrop-blur-sm border border-white/10 p-8 hover:bg-white/10 transition-all duration-500">
                 <BriefcaseBusinessIcon className="h-8 w-8 text-accent mb-4" />
                 <div className="grid grid-cols-2">
-                  <h4 className="font-black text-white uppercase tracking-wide">STANDARD</h4>
+                  <h4 className="font-bold text-white uppercase tracking-wide">STANDARD</h4>
                   <p className="text-white font-bold text-xl">£30</p>
                 </div>
               </div>
@@ -144,7 +144,7 @@ export default function Location() {
             className="space-y-12"
           >
             {/* Map Placeholder */}
-            <div className="bg-gradient-to-br from-primary/20 to-accent/20 border border-white/20 p-16 h-96 flex items-center justify-center relative overflow-hidden">
+            {/* <div className="bg-gradient-to-br from-primary/20 to-accent/20 border border-white/20 p-16 h-96 flex items-center justify-center relative overflow-hidden">
               <div className="text-center z-10">
                 <div className="w-24 h-24 bg-white/20 rounded-none border-4 border-white flex items-center justify-center mx-auto mb-6">
                   <MapPin className="h-12 w-12 text-white" />
@@ -157,7 +157,7 @@ export default function Location() {
                 </p>
               </div>
               <div className="absolute inset-0 bg-gradient-to-br from-primary/10 via-transparent to-accent/10"></div>
-            </div>
+            </div> */}
 
             {/* Getting Here */}
             {/* <div className="bg-white/5 backdrop-blur-sm border border-white/10 p-10">

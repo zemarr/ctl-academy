@@ -122,14 +122,7 @@ export default function Location() {
                     </span>
                   </div>
                 ))}
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-                  <div className="bg-white/5 backdrop-blur-sm border border-white/10 p-8 hover:bg-white/10 transition-all duration-500">
-                    <BirdIcon className="h-8 w-8 text-background mb-4" />
-                    <div className="flex items-center justify-between">
-                      <h4 className="font-bold text-white uppercase tracking-wide">EARLY BIRD</h4>
-                      <p className="text-white font-bold text-xl">£25</p>
-                    </div>
-                  </div>
+                <div className="grid grid-cols-1 gap-6">
                   <div className="bg-white/5 backdrop-blur-sm border border-white/10 p-8 hover:bg-white/10 transition-all duration-500">
                     <BriefcaseBusinessIcon className="h-8 w-8 text-accent mb-4" />
                     <div className="flex items-center justify-between">

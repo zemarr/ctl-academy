@@ -66,14 +66,14 @@ export default function Location() {
             {/* Address */}
             <div className="bg-white/5 backdrop-blur-sm border border-white/10 md:p-10 p-4 hover:bg-white/10 transition-all duration-500">
               <div className="flex items-start gap-6 mb-8">
-                <div className="flex items-center justify-center w-16 h-16 bg-primary/20 rounded-none border-2 border-background">
+                <div className="flex items-center justify-center w-16 h-16 bg-primary/20 rounded-none border-1 border-background">
                   <MapPin className="h-8 w-8 text-background" />
                 </div>
                 <div>
                   <h3 className="text-3xl font-black text-white mb-4 uppercase tracking-wide">
                     OUR ADDRESS
                   </h3>
-                  <div className="text-white/80 text-lg leading-relaxed uppercase space-y-1">
+                  <div className="text-white/80 md:text-lg leading-relaxed uppercase space-y-1">
                     <p className="font-bold uppercase">1 Humphrey Repton Lane,</p>
                     <p> Wembley Park, HA9 0GL</p>
                     <p>LONDON, UNITED KINGDOM</p>
@@ -81,16 +81,22 @@ export default function Location() {
                 </div>
               </div>
               <Button
-                className="w-full bg-transparent hover:bg-beige-dark/90 hover:text-black text-white hover:shadow-sm px-12 py-6 rounded-none font-semibold tracking-wide uppercase md:text-lg text-base border-2 border-beige-dark transition-all duration-300"
+                asChild
+                className="w-full bg-transparent hover:bg-beige-dark/90 hover:text-black text-white hover:shadow-sm px-12 py-6 rounded-none font-semibold tracking-wide uppercase md:text-lg text-base border border-beige-dark transition-all duration-300"
               >
-                GET DIRECTIONS
+                <a
+                  href="https://www.google.com/maps/place/1+Humphry+Repton+Ln,+Wembley+Park,+Wembley+HA9+0GL,+UK/@51.5599661,-0.2850543,17z/data=!3m1!4b1!4m6!3m5!1s0x4876117e28ba7623:0x60059f5f65d73784!8m2!3d51.5599661!4d-0.2824794!16s%2Fg%2F11hhpjl82t?entry=ttu&g_ep=EgoyMDI2MDQxOS4wIKXMDSoASAFQAw%3D%3D"
+                  target="_blank"
+                >
+                  GET DIRECTIONS
+                </a>
               </Button>
             </div>
 
             {/* Hours */}
             <div className="bg-white/5 backdrop-blur-sm border border-white/10 md:p-10 p-4">
               <div className="flex items-center gap-6 mb-8">
-                <div className="flex items-center justify-center w-16 h-16 bg-accent/20 rounded-none border-2 border-accent">
+                <div className="flex items-center justify-center w-16 h-16 bg-accent/20 rounded-none border-1 border-accent">
                   <Clock className="h-8 w-8 text-accent" />
                 </div>
                 <h3 className="text-3xl font-black text-white uppercase tracking-wide">
@@ -116,26 +122,30 @@ export default function Location() {
                     </span>
                   </div>
                 ))}
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                  <div className="bg-white/5 backdrop-blur-sm border border-white/10 p-8 hover:bg-white/10 transition-all duration-500">
+                    <BirdIcon className="h-8 w-8 text-background mb-4" />
+                    <div className="flex items-center justify-between">
+                      <h4 className="font-bold text-white uppercase tracking-wide">EARLY BIRD</h4>
+                      <p className="text-white font-bold text-xl">£25</p>
+                    </div>
+                  </div>
+                  <div className="bg-white/5 backdrop-blur-sm border border-white/10 p-8 hover:bg-white/10 transition-all duration-500">
+                    <BriefcaseBusinessIcon className="h-8 w-8 text-accent mb-4" />
+                    <div className="flex items-center justify-between">
+                      <h4 className="font-bold text-white uppercase tracking-wide">STANDARD</h4>
+                      <p className="text-white font-bold text-xl">£30</p>
+                    </div>
+                  </div>
+                </div>
               </div>
-            </div>
 
-            {/* Contact */}
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-              <div className="bg-white/5 backdrop-blur-sm border border-white/10 p-8 hover:bg-white/10 transition-all duration-500">
-                <BirdIcon className="h-8 w-8 text-background mb-4" />
-                <div className="grid grid-cols-2">
-                  <h4 className="font-bold text-white uppercase tracking-wide">EARLY BIRD</h4>
-                  <p className="text-white font-bold text-xl">£25</p>
-                </div>
-              </div>
-              <div className="bg-white/5 backdrop-blur-sm border border-white/10 p-8 hover:bg-white/10 transition-all duration-500">
-                <BriefcaseBusinessIcon className="h-8 w-8 text-accent mb-4" />
-                <div className="grid grid-cols-2">
-                  <h4 className="font-bold text-white uppercase tracking-wide">STANDARD</h4>
-                  <p className="text-white font-bold text-xl">£30</p>
-                </div>
-              </div>
             </div>
+          </motion.div>
+
+          <motion.div style={{ y: contactY }} className="space-y-12">
+            {/* Contact */}
+
           </motion.div>
 
           {/* Map & Directions */}

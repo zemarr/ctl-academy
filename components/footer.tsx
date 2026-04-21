@@ -40,7 +40,7 @@ export default function Footer() {
                   href={social.href} 
                   target="_blank" 
                   rel="noopener noreferrer"
-                  className="flex items-center justify-center w-14 h-14 bg-primary/10 hover:bg-primary hover:text-white rounded-none border-2 border-primary transition-all duration-300 text-primary group"
+                  className="flex items-center justify-center w-14 h-14 bg-primary/10 hover:bg-primary hover:text-white rounded-none border-1 border-primary transition-all duration-300 text-primary group"
                   aria-label={social.label}
                 >
                   <div className="transform group-hover:scale-110 transition-transform duration-300">
@@ -92,14 +92,14 @@ export default function Footer() {
 
               <div className="flex items-center gap-4">
                 <Mail className="h-6 w-6 text-primary shrink-0" />
-                <span className="text-muted-foreground font-bold">cuethelight@gmail.com</span>
+                <span className="text-muted-foreground font-bold">suzaanibrahim@yahoo.com</span>
               </div>
             </div>
           </div>
         </div>
 
         {/* Hours Banner */}
-        {/* <div className="bg-primary/10 border-2 border-primary p-8 mb-12 text-center">
+        {/* <div className="bg-primary/10 border-1 border-primary p-8 mb-12 text-center">
           <div className="flex items-center justify-center gap-4 mb-4">
             <Coffee className="h-8 w-8 text-primary" />
             <h4 className="text-2xl font-black text-foreground uppercase tracking-wide">

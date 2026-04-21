@@ -7,6 +7,7 @@ import { useScrollVariable } from "./hooks/useScrollVariable";
 import Link from "next/link";
 import Image from "next/image";
 import suzan from '@/public/suzan-img.jpeg'
+import { Button } from "./ui/button";
 
 export default function About() {
   const containerRef = useScrollVariable();
@@ -80,13 +81,18 @@ export default function About() {
                 Through Cue the Light Academy, I create spaces where people can
                 <br /><br />
               </p>
-              <Link href={"/about"} className="py-3 w-max text-black transition-all font-medium text-sm uppercase tracking-wider flex items-center gap-4 hover:underline">
-                <ArrowRight className="animate animate-pulse" />
-                Discover more
-              </Link>
+              <Button
+                asChild
+                className="py-4 px-6 md:w-max w-full h-auto rounded-xs bg-transparent hover:bg-beige-dark/80 border border-beige-dark text-black"
+              >
+                <Link href={"/about"} className="py-3 transition-all font-medium text-sm uppercase tracking-wider flex items-center gap-4">
+                  <ArrowRight className="animate animate-pulse" />
+                  Discover more
+                </Link>
+              </Button>
             </div>
-            <div>
-              <Image src={suzan} alt="Suzan's image" className="w-full h-full object-contain aspect-square" />
+            <div className="">
+              <Image src={suzan} alt="Suzan's image" className="w-full h-full object-fill aspect-auto" />
             </div>
           </motion.div>
         </motion.div>

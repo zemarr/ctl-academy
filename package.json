@@ -6,7 +6,8 @@
     "dev": "next dev & npx next-video sync -w",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "ngrok:dev": "ngrok http 3000"
   },
   "dependencies": {
     "class-variance-authority": "^0.7.1",

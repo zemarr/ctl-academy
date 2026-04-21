@@ -5,7 +5,7 @@ import { useState } from 'react';
 
 export default function WorkshopTicket() {
   return (
-    <div className="w-full h-full md:px-12 px-8 md:py-20 py-12 bg-muted-foreground/5 relative">
+    <div className="w-full h-full md:px-12 px-8 md:py-20 py-12 bg-white/90 relative">
       <h3 className="md:text-3xl text-2xl font-bold mb-2 text-left">Find Your Voice Workshop</h3>
       <p className="text-neutral-600 text-base text-left mb-6">
         You don’t need to become someone else to be confident. <br />

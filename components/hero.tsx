@@ -5,9 +5,10 @@ import { ChevronDown, MapPin } from "lucide-react";
 import { Button } from "./ui/button";
 import storefrontImage from '../public/c0127af0ae2b7073d31b017cec0c79cc96f33bbe.png';
 import HeroVideo from "./hero-video";
+import { useScrollVariable } from "./hooks/useScrollVariable";
 
 export default function Hero() {
-  const containerRef = useRef<HTMLDivElement>(null);
+  const containerRef = useScrollVariable();
   const lastScrollRef = useRef(0);
 
   useEffect(() => {
@@ -93,7 +94,7 @@ export default function Hero() {
 
             {/* Description - Static or very subtle on mobile */}
             <div className="mb-12 flex justify-center">
-              <p className="text-lg lg:text-2xl text-white/80 text-center max-w-2xl leading-relaxed">
+              <p className="max-w-prose text-lg lg:text-2xl text-white/80 text-center leading-relaxed">
                 You don't need to become someone else to be confident.
                 You just need the space to become more of who you already are.
                 <br />

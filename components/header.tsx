@@ -18,17 +18,17 @@ export default function Header() {
   }, []);
 
   const navItems = [
-    { label: "HOME", href: "#home" },
-    { label: "ABOUT", href: "#about" },
-    { label: "WORKSHOP", href: "#workshop" },
-    { label: "JOIN US", href: "#location" },
+    { label: "HOME", href: "/#home" },
+    { label: "ABOUT", href: "/#about" },
+    { label: "WORKSHOP", href: "/#workshop" },
+    { label: "JOIN US", href: "/#location" },
     // { label: "CONTACT", href: "#contact" },
   ];
 
   return (
-    <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-200 ${scrolled ? 'bg-white/95 backdrop-blur-xl text-foreground shadow-lg' : 'bg-transparent text-background'
+    <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-200 ${scrolled ? 'bg-white/95 backdrop-blur-xl text-foreground shadow-lg' : 'bg-transparent backdrop-blur-3xl text-background'
       }`}>
-      <div className="max-w-screen-2xl mx-auto px-6 lg:px-12">
+      <div className="max-w-screen mx-auto px-6 lg:px-12">
         <div className="flex h-20 lg:h-24 items-center justify-between">
           <div className="shrink-0">
             <Image src="/ctl-logo-full.jpeg" alt="ctl Logo" width={70} height={70} className="rounded-lg aspect-square" />

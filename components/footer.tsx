@@ -17,7 +17,7 @@ export default function Footer() {
   // ];
 
   return (
-    <footer id="contact" className="bg-linear-to-br from-muted/40 to-secondary/30 py-20">
+    <footer id="contact" className="bg-linear-to-br from-muted/40 to-secondary/30 py-20 relative">
       <div className="max-w-screen-2xl mx-auto px-6 lg:px-12">
         <div className="grid lg:grid-cols-4 gap-16 mb-16">
           {/* Brand */}
@@ -79,19 +79,20 @@ export default function Footer() {
               <div className="flex items-start gap-4">
                 <MapPin className="h-6 w-6 text-primary mt-1 shrink-0" />
                 <div className="text-muted-foreground">
-                  <p className="font-bold text-foreground uppercase">123 KING STREET</p>
-                  <p className="uppercase">NEWTOWN, NSW 2042</p>
+                  <p className="font-bold text-foreground uppercase">1 Humphrey Repton Lane,</p>
+                  <p className="uppercase">Wembley Park, HA9 0GL</p>
+                  <p className="uppercase">LONDON, UNITED KINGDOM</p>
                 </div>
               </div>
 
-              <div className="flex items-center gap-4">
+              {/* <div className="flex items-center gap-4">
                 <Phone className="h-6 w-6 text-primary shrink-0" />
                 <span className="text-muted-foreground font-bold">(02) 8765 4321</span>
-              </div>
+              </div> */}
 
               <div className="flex items-center gap-4">
                 <Mail className="h-6 w-6 text-primary shrink-0" />
-                <span className="text-muted-foreground font-bold">hello@shenkin.com.au</span>
+                <span className="text-muted-foreground font-bold">cuethelight@gmail.com</span>
               </div>
             </div>
           </div>

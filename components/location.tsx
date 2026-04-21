@@ -39,13 +39,13 @@ export default function Location() {
         <div className="absolute bottom-1/4 left-0 w-80 h-80 bg-accent/20 rounded-full blur-3xl"></div>
       </div>
 
-      <div className="max-w-screen-2xl mx-auto px-6 lg:px-12 relative z-10">
+      <div className="max-w-screen mx-auto px-6 lg:px-12 relative z-10">
         {/* Header */}
         <motion.div
           style={{ y: headerY }}
           className="text-center mb-24"
         >
-          <span className="text-sm font-bold tracking-[0.3em] text-beige uppercase mb-4 block">
+          <span className="text-sm font-bold tracking-[0.3em] text-beige-dark uppercase mb-4 block">
             JOIN US
           </span>
           <h2 className="text-5xl lg:text-7xl font-black tracking-tighter text-white mb-8 uppercase leading-none">

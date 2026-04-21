@@ -147,7 +147,7 @@ export default function Hero() {
             >
               <DayCounter targetDate="2026-05-19" label="Days Left" />
               <StatBlock value="11 AM" label="Start time" />
-              <StatBlock value="YES" label="Virtual & IRL" />
+              <StatBlock value="NO" label="Virtual" />
             </div>
           </div>
         </div>

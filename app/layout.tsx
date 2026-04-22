@@ -19,8 +19,30 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Cue The Light Academy",
-  description: "Find your voice. Let your voice be heard.",
+  title: 'Cue The Light Academy',
+  description: 'Let Your Voice Be Heard — A Communication and Confidence Workshop',
+  openGraph: {
+    title: 'Cue The Light Academy',
+    description: 'Let Your Voice Be Heard — A Communication and Confidence Workshop',
+    url: 'https://cuethelight.co.uk',
+    siteName: 'Cue The Light Academy',
+    images: [
+      {
+        url: 'https://cuethelight.co.uk/og-image.jpeg', // Must be an absolute URL
+        width: 1200,
+        height: 630,
+        alt: 'Headshot of Suzan Kanyinsola',
+      },
+    ],
+    locale: 'en_UK',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Cue The Light Academy',
+    description: 'Let Your Voice Be Heard — A Communication and Confidence Workshop',
+    images: ['https://cuethelight.co.uk/og-image.jpeg'],
+  },
 };
 
 export default function RootLayout({

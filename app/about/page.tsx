@@ -78,7 +78,7 @@ const AboutPage = () => {
               </div>
             </motion.div>
           </div>
-          <p className="text-lg text-background leading-relaxed font-normal text-center mb-6">
+          <p className="text-lg text-background leading-relaxed font-normal text-center mb-12">
             <span className="italic">
               This isn't just about speaking…
               it's about becoming a more confident version of yourself.

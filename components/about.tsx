@@ -55,31 +55,18 @@ export default function About() {
           <span className="text-sm font-bold tracking-[0.3em] text-beige-dark uppercase mb-4 block">
             MY STORY
           </span>
-          <h2 className="text-5xl lg:text-7xl font-black tracking-tighter text-foreground mb-8 uppercase leading-none">
-            ABOUT SUZAN
-          </h2>
 
           <motion.div style={{ y: contentY }} className="max-w-screen mx-auto grid md:grid-cols-2 gap-6">
-            <div>
+            <div className="flex flex-col justify-center">
+              <h2 className="text-5xl lg:text-7xl font-black tracking-tighter text-foreground mb-8 uppercase leading-none text-left">
+                ABOUT SUZAN
+              </h2>
               <p className="text-lg text-muted-foreground leading-relaxed font-normal text-left mb-6">
-                Hi, I'm Suzan.
+                You already have something worth saying. You just haven't found the space to say it yet.
                 <br /><br />
-                I wasn't always confident.
+                My name is Suzan, and I know that feeling from the inside.<br />
+                Growing up, I was heavily bullied. I learned to make myself small, overthink every word, and hold back the parts of me that most wanted to be heard. I wasn't quiet because I had nothing to say. I was quiet because I didn't feel safe saying it.
                 <br />
-                Growing up, I was heavily bullied, which led me to shrink myself and struggle to express who I truly was. I often found myself holding back, overthinking, and feeling misunderstood.
-                <br /><br />
-                Everything changed when I found acting.
-                <br />
-                Through acting, I developed the confidence, clarity, and presence I once lacked. It gave me the tools to understand myself, communicate effectively, and show up more fully in every area of my life.
-                <br /><br />
-                I went on to study Applied Theatre at a leading drama school, where I deepened my understanding of communication, performance, and human connection.
-                <br />
-                Now, with over 13 years of experience across stage, film, voiceover, coaching, and workshop facilitation, I help others find their voice and express themselves with confidence.
-                <br /><br />
-                I work with people who know they have more to say, but struggle to articulate it. Whether that’s due to confidence, introversion, accent, or the fear of being seen.
-                <br /><br />
-                Through Cue the Light Academy, I create spaces where people can
-                <br /><br />
               </p>
               <Button
                 asChild

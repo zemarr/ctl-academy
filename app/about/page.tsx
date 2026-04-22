@@ -10,7 +10,8 @@ const AboutPage = () => {
   return (
     <div id="about-page" className='min-h-screen  bg-black py-32 md:pb-32 relative'>
       <div className="relative">
-        <Image src={ctlBanner} alt="ctl banner image" className="w-full max-h-screen object-contain" />
+        <div className="absolute top-0 left-0 bg-black/10 w-screen h-screen"></div>
+        <Image src={ctlBanner} alt="ctl banner image" quality={75} className="w-full max-h-screen object-contain" />
 
         <h2 className="absolute md:bottom-20 bottom-10 left-0 w-full text-center text-5xl lg:text-7xl font-black tracking-tighter text-background mb-12 uppercase leading-none">
           ABOUT US

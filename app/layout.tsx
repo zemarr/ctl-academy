@@ -20,10 +20,10 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: 'Cue The Light Academy',
-  description: 'Let Your Voice Be Heard — A Communication and Confidence Workshop',
+  description: "Let Your Voice Be Heard — A Communication and Confidence Workshop. You don't need to become someone else to be confident. You just need the space to become more of who you already are.",
   openGraph: {
     title: 'Cue The Light Academy',
-    description: 'Let Your Voice Be Heard — A Communication and Confidence Workshop',
+    description: "Let Your Voice Be Heard — A Communication and Confidence Workshop. You don't need to become someone else to be confident. You just need the space to become more of who you already are.",
     url: 'https://cuethelight.co.uk',
     siteName: 'Cue The Light Academy',
     images: [
@@ -40,8 +40,11 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'Cue The Light Academy',
-    description: 'Let Your Voice Be Heard — A Communication and Confidence Workshop',
+    description: "Let Your Voice Be Heard — A Communication and Confidence Workshop. You don't need to become someone else to be confident. You just need the space to become more of who you already are.",
     images: ['https://cuethelight.co.uk/og-image.jpeg'],
+  },
+  other: {
+    'og:logo': 'https://cuethelight.co.uk/og-image.jpeg', // Ensure this is a real absolute URL
   },
 };
 

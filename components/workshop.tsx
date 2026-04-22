@@ -160,7 +160,7 @@ export default function Workshop() {
 
 
         {/* CTA */}
-        <h3 className="max-w-prose text-3xl lg:text-5xl font-black text-foreground mb-20 uppercase tracking-tight text-center">Are you ready to transform your life?</h3>
+        <h3 className="max-w-prose text-3xl lg:text-6xl font-black text-foreground mb-20 uppercase tracking-tight leading-18 text-center">Are You Ready <br /> to Finally Be Heard?</h3>
 
         <WorkshopBookingCard />
 

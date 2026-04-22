@@ -1,6 +1,6 @@
 'use client'
 
-import { Mail, Phone, MapPin, Coffee } from "lucide-react";
+import { Mail, Phone, MapPin, Coffee, PhoneIcon } from "lucide-react";
 import Image from "next/image";
 
 export default function Footer() {
@@ -22,33 +22,6 @@ export default function Footer() {
         <div className="grid lg:grid-cols-4 gap-16 mb-16">
           {/* Brand */}
           <div className="lg:col-span-2 space-y-8">
-            {/* <div>
-              <div className="shrink-0">
-                <Image src="/ctl-logo-full.jpeg" alt="ctl Logo" width={70} height={70} className="rounded-lg aspect-square mb-6" />
-              </div>
-              <h3 className="text-5xl font-black text-foreground tracking-wider mb-6">SHENKIN</h3>
-              <p className="text-lg text-muted-foreground leading-relaxed max-w-lg">
-                <strong className="text-foreground font-bold">CUE THE LIGHT. </strong>
-                Let your voice be heard.
-              </p>
-            </div> */}
-
-            {/* <div className="flex gap-4">
-              {socialLinks.map((social, index) => (
-                <a 
-                  key={index}
-                  href={social.href} 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className="flex items-center justify-center w-14 h-14 bg-primary/10 hover:bg-primary hover:text-white rounded-none border-1 border-primary transition-all duration-300 text-primary group"
-                  aria-label={social.label}
-                >
-                  <div className="transform group-hover:scale-110 transition-transform duration-300">
-                    {social.icon}
-                  </div>
-                </a>
-              ))}
-            </div> */}
           </div>
 
           {/* Quick Links */}
@@ -78,61 +51,72 @@ export default function Footer() {
             <div className="space-y-6">
               <div className="flex items-start gap-4">
                 <MapPin className="h-6 w-6 text-primary mt-1 shrink-0" />
-                <div className="text-muted-foreground">
+                <a href="https://www.google.com/maps/place/1+Humphry+Repton+Ln,+Wembley+Park,+Wembley+HA9+0GL,+UK/@51.5599661,-0.2850543,17z/data=!3m1!4b1!4m6!3m5!1s0x4876117e28ba7623:0x60059f5f65d73784!8m2!3d51.5599661!4d-0.2824794!16s%2Fg%2F11hhpjl82t?entry=ttu&g_ep=EgoyMDI2MDQxOS4wIKXMDSoASAFQAw%3D%3D"
+                  target="_blank"
+                  className="text-muted-foreground"
+                >
                   <p className="font-bold text-foreground uppercase">1 Humphrey Repton Lane,</p>
                   <p className="uppercase">Wembley Park, HA9 0GL</p>
                   <p className="uppercase">LONDON, UNITED KINGDOM</p>
-                </div>
+                </a>
               </div>
-
-              {/* <div className="flex items-center gap-4">
-                <Phone className="h-6 w-6 text-primary shrink-0" />
-                <span className="text-muted-foreground font-bold">(02) 8765 4321</span>
-              </div> */}
 
               <div className="flex items-center gap-4">
                 <Mail className="h-6 w-6 text-primary shrink-0" />
-                <span className="text-muted-foreground font-bold">suzaanibrahim@yahoo.com</span>
+                <a href="mailto:cuethelightacademy@gmail.com" target="_blank" className="text-muted-foreground font-bold">cuethelightacademy@gmail.com</a>
+              </div>
+              <div className="flex items-center gap-4">
+                <PhoneIcon className="h-6 w-6 text-primary shrink-0" />
+                <a href="tel:+4407532775681" target="_blank" className="text-muted-foreground font-bold">+44-0753-2775681</a>
+              </div>
+              <div className="flex items-center gap-4">
+                <span>
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clipPath="url(#clip0_1_2588)">
+                      <path d="M0 3.20169C0 2.42947 0.270278 1.79241 0.810811 1.29049C1.35134 0.788555 2.05406 0.537598 2.91892 0.537598C3.76835 0.537598 4.45559 0.784686 4.9807 1.27891C5.52123 1.78856 5.79151 2.45264 5.79151 3.27119C5.79151 4.0125 5.52897 4.63025 5.00386 5.12447C4.46333 5.63412 3.7529 5.88895 2.87259 5.88895H2.84942C1.99999 5.88895 1.31275 5.63412 0.787645 5.12447C0.262541 4.61482 0 3.97388 0 3.20169ZM0.301158 23.472V7.99706H5.44402V23.472H0.301158ZM8.29344 23.472H13.4363V14.831C13.4363 14.2905 13.4981 13.8735 13.6216 13.5801C13.8378 13.055 14.166 12.6109 14.6062 12.248C15.0463 11.8851 15.5984 11.7036 16.2626 11.7036C17.9923 11.7036 18.8571 12.8696 18.8571 15.2017V23.472H24V14.5994C24 12.3137 23.4595 10.5801 22.3784 9.3986C21.2973 8.21713 19.8687 7.6264 18.0927 7.6264C16.1004 7.6264 14.5483 8.48354 13.4363 10.1978V10.2442H13.4131L13.4363 10.1978V7.99706H8.29344C8.32432 8.49126 8.33977 10.0279 8.33977 12.6071C8.33977 15.1862 8.32432 18.8079 8.29344 23.472Z" fill="black" />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_1_2588">
+                        <rect width="24" height="24" fill="white" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+
+                </span>
+                <a href="http://linkedin.com/in/suzanibrahim" target="_blank" className="text-muted-foreground font-bold">suzanibrahim</a>
+              </div>
+              <div className="flex items-center gap-4">
+                <span>
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M23.9328 7.05204C23.8752 5.77422 23.6687 4.89992 23.3759 4.13611C23.0686 3.34828 22.6605 2.67574 21.9932 2.01281C21.3259 1.34988 20.6585 0.931946 19.8712 0.629304C19.1078 0.331465 18.234 0.129704 16.957 0.0720576C15.6751 0.0144115 15.2671 0 12.012 0C8.75215 0 8.34407 0.0144115 7.06701 0.0720576C5.78996 0.129704 4.91618 0.336269 4.15283 0.629304C3.36067 0.93675 2.68854 1.34508 2.02601 2.01281C1.36347 2.68054 0.945791 3.34828 0.64333 4.13611C0.350471 4.89992 0.14403 5.77422 0.0864187 7.05204C0.0288072 8.33467 0.0144043 8.743 0.0144043 12C0.0144043 15.2618 0.0288072 15.6701 0.0864187 16.948C0.14403 18.2258 0.350471 19.1001 0.64333 19.8639C0.950592 20.6517 1.35867 21.3243 2.02601 21.9872C2.68854 22.6549 3.36067 23.0681 4.14803 23.3707C4.91138 23.6685 5.78516 23.8703 7.06221 23.9279C8.34407 23.9856 8.75215 24 12.0072 24C15.2671 24 15.6751 23.9856 16.9522 23.9279C18.2292 23.8703 19.103 23.6637 19.8664 23.3707C20.6537 23.0633 21.3259 22.6549 21.9884 21.9872C22.6509 21.3195 23.0686 20.6517 23.3711 19.8639C23.6687 19.1001 23.8704 18.2258 23.928 16.948C23.9856 15.6653 24 15.257 24 12C24 8.743 23.9904 8.32986 23.9328 7.05204ZM21.7772 16.8519C21.7243 18.024 21.5275 18.6629 21.3643 19.0809C21.1482 19.6381 20.8842 20.0416 20.4617 20.4644C20.0392 20.8871 19.6407 21.1417 19.079 21.3675C18.6565 21.5308 18.018 21.7278 16.8514 21.7806C15.5887 21.8383 15.2094 21.8527 12.0024 21.8527C8.79536 21.8527 8.41608 21.8383 7.15343 21.7806C5.982 21.7278 5.34347 21.5308 4.92579 21.3675C4.36888 21.1513 3.96559 20.8871 3.54311 20.4644C3.12063 20.0416 2.86617 19.6429 2.64053 19.0809C2.4773 18.6581 2.28046 18.0192 2.22765 16.8519C2.17004 15.5885 2.15563 15.209 2.15563 12C2.15563 8.79103 2.17004 8.41153 2.22765 7.14812C2.28046 5.97598 2.4773 5.33707 2.64053 4.91914C2.85657 4.36189 3.12063 3.95837 3.54311 3.53563C3.96559 3.11289 4.36407 2.85829 4.92579 2.63251C5.34827 2.46918 5.9868 2.27222 7.15343 2.21938C8.41608 2.16173 8.79536 2.14732 12.0024 2.14732C15.2094 2.14732 15.5887 2.16173 16.8514 2.21938C18.0228 2.27222 18.6613 2.46918 19.079 2.63251C19.6359 2.84868 20.0392 3.11289 20.4617 3.53563C20.8842 3.95837 21.1386 4.35709 21.3643 4.91914C21.5275 5.34187 21.7243 5.98079 21.7772 7.14812C21.8348 8.41153 21.8492 8.79103 21.8492 12C21.8492 15.209 21.83 15.5885 21.7772 16.8519Z" fill="black" />
+                    <path d="M12.0024 5.83185C8.59376 5.83185 5.83801 8.59406 5.83801 12C5.83801 15.4107 8.59856 18.1681 12.0024 18.1681C15.4063 18.1681 18.1669 15.4011 18.1669 12C18.1669 8.58925 15.4111 5.83185 12.0024 5.83185ZM12.0024 16.0016C9.794 16.0016 8.00325 14.2098 8.00325 12C8.00325 9.79021 9.794 7.99838 12.0024 7.99838C14.2109 7.99838 16.0016 9.79021 16.0016 12C16.0016 14.2098 14.2109 16.0016 12.0024 16.0016Z" fill="black" />
+                    <path d="M18.4068 7.03282C19.2023 7.03282 19.8471 6.38759 19.8471 5.59167C19.8471 4.79574 19.2023 4.15051 18.4068 4.15051C17.6114 4.15051 16.9666 4.79574 16.9666 5.59167C16.9666 6.38759 17.6114 7.03282 18.4068 7.03282Z" fill="black" />
+                    <path d="M0 12C0 15.2618 0.0144029 15.6701 0.0720144 16.948C0.129626 18.2258 0.336067 19.1001 0.628926 19.8639C0.936187 20.6517 1.34427 21.3243 2.0116 21.9872C2.67413 22.6501 3.34627 23.0681 4.13363 23.3707C4.89698 23.6685 5.77075 23.8703 7.04781 23.9279C8.32967 23.9856 8.73775 24 11.9928 24C15.2527 24 15.6607 23.9856 16.9378 23.9279C18.2148 23.8703 19.0886 23.6637 19.852 23.3707C20.6393 23.0633 21.3115 22.6549 21.974 21.9872C22.6365 21.3243 23.0542 20.6517 23.3567 19.8639C23.6543 19.1001 23.856 18.2258 23.9136 16.948C23.9712 15.6653 23.9856 15.257 23.9856 12C23.9856 8.73819 23.9712 8.32986 23.9136 7.05204C23.856 5.77422 23.6495 4.89992 23.3567 4.13611C23.0494 3.34828 22.6413 2.67574 21.974 2.01281C21.3163 1.34508 20.6441 0.931946 19.8568 0.629304C19.0934 0.331465 18.2196 0.129704 16.9426 0.0720576C15.6607 0.0144115 15.2527 0 11.9976 0C8.73775 0 8.32967 0.0144115 7.05261 0.0720576C5.77555 0.129704 4.90178 0.336269 4.13843 0.629304C3.35107 0.93675 2.67894 1.34508 2.0164 2.01281C1.35387 2.68054 0.936187 3.34828 0.633727 4.13611C0.336067 4.89992 0.129626 5.77422 0.0720144 7.05204C0.0144029 8.32986 0 8.73819 0 12ZM2.16523 12C2.16523 8.79584 2.17964 8.41153 2.23725 7.14812C2.29006 5.97598 2.4869 5.33707 2.65013 4.91914C2.86617 4.36189 3.13023 3.95837 3.55271 3.53563C3.97519 3.11289 4.37367 2.85829 4.93539 2.63251C5.35787 2.46918 5.9964 2.27222 7.16303 2.21938C8.42568 2.16173 8.80496 2.14732 12.012 2.14732C15.219 2.14732 15.5983 2.16173 16.861 2.21938C18.0324 2.27222 18.6709 2.46918 19.0886 2.63251C19.6455 2.84868 20.0488 3.11289 20.4713 3.53563C20.8938 3.95837 21.1482 4.35709 21.3739 4.91914C21.5371 5.34187 21.7339 5.98079 21.7868 7.14812C21.8444 8.41153 21.8588 8.79103 21.8588 12C21.8588 15.209 21.8444 15.5885 21.7868 16.8519C21.7339 18.024 21.5371 18.6629 21.3739 19.0809C21.1578 19.6381 20.8938 20.0416 20.4713 20.4644C20.0488 20.8871 19.6503 21.1417 19.0886 21.3675C18.6661 21.5308 18.0276 21.7278 16.861 21.7806C15.5983 21.8383 15.219 21.8527 12.012 21.8527C8.80496 21.8527 8.42568 21.8383 7.16303 21.7806C5.9916 21.7278 5.35307 21.5308 4.93539 21.3675C4.37848 21.1513 3.97519 20.8871 3.55271 20.4644C3.13023 20.0416 2.87578 19.6429 2.65013 19.0809C2.4869 18.6581 2.29006 18.0192 2.23725 16.8519C2.17483 15.5885 2.16523 15.2042 2.16523 12Z" fill="black" />
+                  </svg>
+
+                </span>
+                <a href="https://instagram.com/cuethelightacademy" target="_blank" className="text-muted-foreground font-bold">cuethelightacademy</a>
+              </div>
+              <div className="flex items-center gap-4">
+                <span>
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M17.2402 0H13.0968V16.3478C13.0968 18.2957 11.5033 19.8957 9.52012 19.8957C7.53698 19.8957 5.94339 18.2957 5.94339 16.3478C5.94339 14.4348 7.50157 12.8695 9.4139 12.8V8.69567C5.19971 8.7652 1.80005 12.1391 1.80005 16.3478C1.80005 20.5913 5.27054 24 9.55555 24C13.8405 24 17.311 20.5565 17.311 16.3478V7.9652C18.8692 9.07827 20.7815 9.73913 22.8 9.77393V5.66957C19.6837 5.56522 17.2402 3.06087 17.2402 0Z" fill="black" />
+                  </svg>
+                </span>
+                <a href="https://www.tiktok.com/@signedsuzan" target="_blank" className="text-muted-foreground font-bold">signedsuzan</a>
               </div>
             </div>
           </div>
         </div>
-
-        {/* Hours Banner */}
-        {/* <div className="bg-primary/10 border-1 border-primary p-8 mb-12 text-center">
-          <div className="flex items-center justify-center gap-4 mb-4">
-            <Coffee className="h-8 w-8 text-primary" />
-            <h4 className="text-2xl font-black text-foreground uppercase tracking-wide">
-              OPENING HOURS
-            </h4>
-            <Coffee className="h-8 w-8 text-primary" />
-          </div>
-          <div className="grid md:grid-cols-3 gap-4 text-center">
-            <div>
-              <p className="font-black text-primary text-lg uppercase">MON - FRI</p>
-              <p className="text-muted-foreground font-bold">6:00 AM - 4:00 PM</p>
-            </div>
-            <div>
-              <p className="font-black text-primary text-lg uppercase">SATURDAY</p>
-              <p className="text-muted-foreground font-bold">7:00 AM - 5:00 PM</p>
-            </div>
-            <div>
-              <p className="font-black text-primary text-lg uppercase">SUNDAY</p>
-              <p className="text-muted-foreground font-bold">7:00 AM - 4:00 PM</p>
-            </div>
-          </div>
-        </div> */}
-
         {/* Bottom Bar */}
         <div className="border-t-2 border-border pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center gap-6">
             <p className="text-muted-foreground font-bold uppercase tracking-wide">
-              &copy; {new Date().getFullYear()} CUE THE LIGHT ACADEMY. ALL RIGHTS RESERVED.
+              {/* &copy; {new Date().getFullYear()} CUE THE LIGHT ACADEMY. ALL RIGHTS RESERVED. */}
+              &copy; 2025 CUE THE LIGHT ACADEMY. ALL RIGHTS RESERVED.
             </p>
-            <div className="flex items-center gap-8 text-muted-foreground font-bold uppercase tracking-wide">
-              <a href="https://instagram.com/tekksavi" target="_blank">Built by 👨🏾‍💻</a>
-              {/* <span className="hidden md:inline text-primary">•</span>
-              <span>AUTHENTIC FLAVORS</span> */}
+            <div className="flex items-center gap-8 text-muted-foreground text-sm font-medium uppercase tracking-wide">
+              <a href="https://instagram.com/iamzemar" target="_blank">Built with ♥️ by zemar</a>
             </div>
           </div>
         </div>

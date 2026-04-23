@@ -13,7 +13,7 @@ export default function WorkshopTicket() {
       <div className="flex flex-col gap-2 mb-6">
         <div className="flex justify-between items-start gap-12">
           <p className="text-sm font-medium text-neutral-500 uppercase tracking-widest">Date</p>
-          <p className="font-semibold text-neutral-800">May 16, 2026</p>
+          <p className="font-semibold text-neutral-800">30th May, 2026</p>
         </div>
         <div className="flex justify-between items-start gap-12">
           <p className="text-sm font-medium text-neutral-500 uppercase tracking-widest">Time</p>
@@ -25,7 +25,7 @@ export default function WorkshopTicket() {
         </div>
         <div className="flex justify-between items-start gap-12">
           <p className="text-sm font-medium text-neutral-500 uppercase tracking-widest">Contact</p>
-          <a href="tel:+4407532775681" target="_blank" className="font-semibold text-neutral-800 text-right">+44-0753-2775681</a>
+          <a href="tel:+4407532775681" target="_blank" className="font-semibold text-neutral-800 text-right">+447532775681</a>
           {/* <p className="font-semibold text-neutral-800 text-right">1 Humphrey Repton Lane, Wembley Park, HA9 0GL</p> */}
         </div>
       </div>

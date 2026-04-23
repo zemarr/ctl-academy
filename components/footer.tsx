@@ -67,7 +67,7 @@ export default function Footer() {
               </div>
               <div className="flex items-center gap-4">
                 <PhoneIcon className="h-6 w-6 text-primary shrink-0" />
-                <a href="tel:+4407532775681" target="_blank" className="text-muted-foreground font-bold">+44-0753-2775681</a>
+                <a href="tel:+447532775681" target="_blank" className="text-muted-foreground font-bold">+447532775681</a>
               </div>
               <div className="flex items-center gap-4">
                 <span>

@@ -19,7 +19,7 @@ export default function Location() {
   const mapY = useTransform(scrollYProgress, [0.2, 1], [40, -40]);
 
   const openingHours = [
-    { day: "16TH MAY 2026", hours: "11:00 AM - 2:00 PM", isToday: false },
+    { day: "30TH MAY 2026", hours: "11:00 AM - 2:00 PM", isToday: false },
     // { day: "SATURDAY", hours: "7:00 AM - 5:00 PM", isToday: true },
     // { day: "SUNDAY", hours: "7:00 AM - 4:00 PM", isToday: false },
   ];

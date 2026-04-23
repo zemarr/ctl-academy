@@ -145,7 +145,7 @@ export default function Hero() {
               className="grid grid-cols-3 gap-8 pt-16 mt-16 border-t border-white/20 will-change-transform"
               style={{ transform: `translate3d(0, calc(var(--scroll-y) * 0.12), 0)` }}
             >
-              <DayCounter targetDate="2026-05-19" label="Days Left" />
+              <DayCounter targetDate="2026-05-30" label="Days Left" />
               <StatBlock value="11 AM" label="Start time" />
               <StatBlock value="NO" label="Virtual" />
             </div>

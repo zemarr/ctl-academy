@@ -102,12 +102,12 @@ export default function About() {
                 viewport={{ once: false, amount: 0.5 }} // Animation triggers once when 50% visible
                 transition={{ duration: 0.8, ease: "easeOut" }}
                 className="text-4xl lg:text-5xl font-black text-foreground mb-8 tracking-tight uppercase leading-tight">
-                CUE THE LIGHT<br />
-                ACADEMY <span className="text-primary">IS A SPACE</span>
+                CUE THE LIGHT ACADEMY
               </motion.h3>
               <div className="space-y-6 text-lg text-muted-foreground leading-relaxed">
                 <p>
-                  It was created from my belief that everyone deserves to be heard. <br /> I created it as a transformative sanctuary designed to help those holding back their true potential move from the shadows of hesitation into the warmth of confident, purposeful expression.
+                  Cue The Light Academy is a space created from a simple but powerful belief, that everyone deserves to be heard.
+                  It is a transformative sanctuary designed to help those holding back their true potential move from the shadows of hesitation into the warmth of confident, purposeful expression.
                 </p>
               </div>
             </div>
@@ -120,7 +120,7 @@ export default function About() {
                 transition={{ duration: 1, ease: "easeOut" }}
                 className="bg-white/80 backdrop-blur-sm p-8 border-l-4 border-accent">
                 <h4 className="font-black text-foreground mb-4 tracking-wide uppercase">Find your authentic voice</h4>
-                <p className="text-muted-foreground">Discover the power of your natural tone to speak with genuine, unshakeable authority.</p>
+                <p className="text-muted-foreground">Discover the power of your natural tone and learn to speak with genuine, unshakeable authority.</p>
               </motion.div>
 
               <motion.div
@@ -130,7 +130,7 @@ export default function About() {
                 transition={{ duration: 1.1, ease: "easeOut" }}
                 className="bg-white/80 backdrop-blur-sm p-8 border-l-4 border-primary">
                 <h4 className="font-black text-foreground mb-4 tracking-wide uppercase">Break through internal barriers</h4>
-                <p className="text-muted-foreground">Overcome the weight of introversion or the fear of judgment that keeps you silent.</p>
+                <p className="text-muted-foreground">Overcome the weight of introversion and the fear of judgement that keeps you silent.</p>
               </motion.div>
 
               <motion.div
@@ -140,7 +140,7 @@ export default function About() {
                 transition={{ duration: 1.2, ease: "easeOut" }}
                 className="bg-white/80 backdrop-blur-sm p-8 border-l-4 border-accent">
                 <h4 className="font-black text-foreground mb-4 tracking-wide uppercase">Master the art of presence</h4>
-                <p className="text-muted-foreground">Learn to command attention and show up fully in both professional boardrooms and personal circles.</p>
+                <p className="text-muted-foreground">Learn to command attention and show up fully, in professional spaces and personal ones alike.</p>
               </motion.div>
 
               <motion.div
@@ -150,7 +150,7 @@ export default function About() {
                 transition={{ duration: 1.3, ease: "easeOut" }}
                 className="bg-white/80 backdrop-blur-sm p-8 border-l-4 border-accent">
                 <h4 className="font-black text-foreground mb-4 tracking-wide uppercase">Communicate with clarity</h4>
-                <p className="text-muted-foreground">Refine your delivery to ensure your message is not just heard, but deeply understood.</p>
+                <p className="text-muted-foreground">Refine your delivery so that your message is not just heard, but deeply understood.</p>
               </motion.div>
 
               <motion.div

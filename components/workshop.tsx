@@ -30,33 +30,33 @@ export default function Workshop() {
   const signature = [
     {
       name: "Public Speaking",
-      description: "Mastering the art of delivery and learn to command any stage or boardroom with poise and purpose.",
+      description: "Master the art of delivery and learn to command any stage or room with confidence and purpose.",
       image: shakshukaImage,
       suzansNote: "Speaking is less about perfection and more about the connection you create with your audience.",
     },
     {
       name: "Storytelling",
-      description: "Transforming your ideas into compelling narratives that resonate with your audience and leave a lasting impact.",
+      description: "Transform your ideas into compelling narratives that resonate with your audience and leave a lasting impact.",
       image: shakshukaImage,
       suzansNote: "Your story is your superpower. I will help you find the emotional threads that make your message stick.",
     },
     {
       name: "Vocal Clarity",
-      description: "Unlocking the full potential of your voice, mastering tone and diction to ensure you are always heard and understood.",
+      description: "Unlock the full potential of your voice, mastering tone and diction so you are always heard and understood.",
       image: shakshukaImage,
-      suzansNote: "Your voice is an instrument—once you learn to tune it, you will never have to worry about being lost in the noise.",
+      suzansNote: "Your voice is an instrument. Once you learn to tune it, you will never have to worry about being lost in the noise.",
     },
     {
       name: "Body Language",
-      description: "Aligning your physical presence with your message to project natural authority and connect authentically with others.",
+      description: "Align your physical presence with your message to project natural authority and connect authentically with others.",
       image: shakshukaImage,
-      suzansNote: "We speak with our whole selves; when your body matches your words, your confidence becomes undeniable.",
+      suzansNote: "We speak with our whole selves. When your body matches your words, your confidence becomes undeniable.",
     },
     {
       name: "Confidence-Building Exercises",
-      description: "Engaging in practical, action-based techniques to quiet the inner critic and step boldly into your own light.",
+      description: "Engage in practical, movement-based techniques to quiet the inner critic and step boldly into your own light.",
       image: shakshukaImage,
-      suzansNote: "Please in comfortable clothing. The session is interactive and movement-based. Confidence is a muscle we build through doing, moving you from overthinking into authentic, deliberate action.",
+      suzansNote: "Confidence is a muscle we build through doing, moving you from overthinking into authentic, deliberate action.",
     },
   ];
 
@@ -103,7 +103,7 @@ export default function Workshop() {
               Our workshops are interactive, practical, and designed to get you out of your head and into expression. <span className="font-semibold">No pressure. No judgement.
                 Just a safe space to grow.</span>
               <br /><br />
-              From our pool of knowledge, you will gain essential skills such as
+              <span className="md:font-black font-medium md:text-3xl text-xl uppercase text-foreground">what you will gain</span>
             </p>
           </motion.div>
         </div>

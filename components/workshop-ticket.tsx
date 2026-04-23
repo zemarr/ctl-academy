@@ -45,7 +45,7 @@ export default function WorkshopTicket() {
           className={`w-full bg-beige-dark hover:bg-beige-dark/60 hover:text-black text-black px-12 py-4 rounded-none font-semibold tracking-wide uppercase md:text-base text-sm transition-all duration-300
             }`}
         >
-          Early Bird
+          SECURE YOUR SPOT
         </button>
 
       </div>

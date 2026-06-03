@@ -1,15 +1,8 @@
 'use client'
 
-import { useRef } from "react";
-// import { Star, Clock, Flame } from "lucide-react";
-import { Button } from "./ui/button";
-// import { Badge } from "./ui/badge";
 import shakshukaImage from '../public/06244c169a95043f093144c89f2786568ab2c9a9.png';
-import teaImage from '../public/cf5fcb9eafa834916a1baf266d52ce74225cd860.png';
 import { motion, useScroll, useTransform, Variants } from "framer-motion";
 import { useScrollVariable } from "./hooks/useScrollVariable";
-import WorkshopTicket from "./workshop-ticket";
-import Image from "next/image";
 import WorkshopBookingCard from "./workshop-booking-card";
 
 export default function Workshop() {
@@ -160,31 +153,9 @@ export default function Workshop() {
 
 
         {/* CTA */}
-        <h3 className="max-w-prose text-3xl lg:text-6xl font-black text-foreground mb-20 uppercase tracking-tight leading-18 text-center">Are You Ready <br /> to Finally Be Heard?</h3>
+        {/* <h3 className="max-w-prose text-3xl lg:text-6xl font-black text-foreground mb-20 uppercase tracking-tight leading-18 text-center">Are You Ready <br /> to Finally Be Heard?</h3>
 
-        <WorkshopBookingCard />
-
-        {/* <motion.div
-          style={{ y: ctaY }}
-          className="text-center bg-linear-to-r from-beige/15 to-beige-dark/20 md:p-16 p-8 py-16 relative overflow-hidden"
-        >
-          <div className="relative z-10">
-            <h3 className="max-w-prose text-3xl lg:text-5xl font-black text-foreground mb-6 uppercase tracking-tight">
-              ARE YOU READY TO TRANSFORM<br />
-              <span className="text-primary">YOUR LIFE?</span>
-            </h3>
-            <p className="md:text-xl text-lg text-muted-foreground mb-10 max-w-2xl mx-auto">
-              Step out of the shadows and into your most confident self. Master the art of presence and learn to communicate with clarity, authority, and impact.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-6 justify-center">
-              <Button size="lg" className="bg-beige-dark hover:bg-beige-dark/90 text-black hover:shadow-sm px-12 py-6 rounded-none font-semibold tracking-wide uppercase text-base border-1 border-beige-dark transition-all duration-300">
-                SECURE YOUR SPOT
-              </Button>
-            </div>
-          </div>
-          <div className="absolute -right-20 -top-20 w-80 h-80 bg-primary/10 rounded-full blur-3xl"></div>
-          <div className="absolute -left-20 -bottom-20 w-60 h-60 bg-accent/10 rounded-full blur-2xl"></div>
-        </motion.div> */}
+        <WorkshopBookingCard /> */}
       </div>
     </section>
   );

@@ -1,4 +1,4 @@
-'use client'; // This allows the use of onReady
+'use client';
 
 import Script from 'next/script';
 

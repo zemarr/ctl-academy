@@ -2,34 +2,14 @@
 
 import { useEffect, useRef, useState } from "react";
 import { ChevronDown, MapPin } from "lucide-react";
-import { Button } from "./ui/button";
-import storefrontImage from '../public/c0127af0ae2b7073d31b017cec0c79cc96f33bbe.png';
 import HeroVideo from "./hero-video";
 import { useScrollVariable } from "./hooks/useScrollVariable";
-import Script from "next/script";
+import CTLHeroImage from '@/public/ctl-academy-2026-4.jpeg'
+import Image from "next/image";
 
 export default function Hero() {
   const containerRef = useScrollVariable();
   const lastScrollRef = useRef(0);
-
-  const [isLoaded, setIsLoaded] = useState(false);
-  const buttonId = `eb-hero-trigger-${process.env.NEXT_PUBLIC_EVENTBRITE_EVENT_ID!}`;
-
-  // const initEventbrite = () => {
-  //   if (window.EBWidgets) {
-  //     window.EBWidgets.createWidget({
-  //       widgetType: 'checkout',
-  //       eventId: process.env.NEXT_PUBLIC_EVENTBRITE_EVENT_ID!,
-  //       modal: true,
-  //       modalTriggerElementId: buttonId,
-  //       onOrderComplete: () => {
-  //         console.log('Order successful.');
-  //         // Optional: window.location.href = '/thank-you';
-  //       },
-  //     });
-  //     setIsLoaded(true);
-  //   }
-  // };
 
   useEffect(() => {
     let requestRef: number;
@@ -38,7 +18,7 @@ export default function Hero() {
     const updateParallax = () => {
       if (containerRef.current) {
         const scrollY = window.scrollY;
-        // Only update if scroll position actually changed to reduce re-renders
+        // Update only if scroll position actually changed to reduce re-renders
         if (scrollY !== lastScrollRef.current) {
           containerRef.current.style.setProperty('--scroll-y', `${scrollY}px`);
           lastScrollRef.current = scrollY;
@@ -77,21 +57,25 @@ export default function Hero() {
           transform: `translate3d(0, calc(var(--scroll-y) * 0.4), 0)`,
         }}
       >
-        <div className="absolute inset-0 bg-linear-to-br from-black/60 via-black/40 to-black/70 z-10" />
-        {/* <img
-          src={storefrontImage.src}
-          alt="Shenkin Cafe Storefront"
-          className="w-full h-full object-cover"
-        /> */}
-        <HeroVideo />
+        <div className="absolute inset-0 bg-linear-to-br from-black/50 via-black/60 to-black/80 z-10" />
+        <Image
+          src={CTLHeroImage.src}
+          blurDataURL={CTLHeroImage.blurDataURL}
+          alt="Cue The Light Workshop 2026"
+          fill
+          sizes="(max-w-768px) 100vw, 100vw"
+          placeholder="blur"
+          preload
+          className="w-full h-full object-cover transition-all duration-[1.4s] ease-out"
+        />
+        {/* <HeroVideo /> */}
       </div>
 
       {/* Content */}
       <div className="relative z-20 min-h-screen flex items-center">
         <div className="max-w-screen-2xl mx-auto px-6 lg:px-12 py-32">
-          <div className="max-w-4xl w-full">
+          <div className="max-w-6xl w-full">
 
-            {/* Location Badge - Reduced multiplier for mobile comfort */}
             <div
               className="flex items-center gap-3 px-6 py-3 bg-white/10 backdrop-blur-sm rounded-full mb-8 border border-white/20 w-max mx-auto will-change-transform"
               style={{ transform: `translate3d(0, calc(var(--scroll-y) * 0.05), 0)` }}
@@ -107,8 +91,8 @@ export default function Hero() {
               className="space-y-6 mb-12 will-change-transform"
               style={{ transform: `translate3d(0, calc(var(--scroll-y) * 0.08), 0)` }}
             >
-              <h1 className="text-6xl lg:text-8xl xl:text-9xl font-black tracking-tighter text-center text-white leading-none uppercase">
-                CUE THE LIGHT<br /><span className="text-beige-dark">ACADEMY</span>
+              <h1 className="text-5xl sm:text-7xl lg:text-7xl xl:text-9xl font-black tracking-wide text-center text-white leading-10 sm:leading-13 lg:leading-17 xl:leading-26 uppercase">
+                CUE THE LIGHT<br /><span className="text-beige-dark text-4xl sm:text-5xl lg:text-6xl xl:text-8xl tracking-tight">ACADEMY</span>
               </h1>
             </div>
 
@@ -122,33 +106,25 @@ export default function Hero() {
               </p>
             </div>
 
-            {/* <Script
-              src="https://www.eventbrite.com/static/widgets/eb_widgets.js"
-              onReady={initEventbrite} // onReady ensures it works even if you navigate back to this page
-            /> */}
-
             {/* CTA Buttons - Kept static for better tap-accuracy */}
-            <div className="flex flex-col sm:flex-row justify-center gap-6">
+            {/* <div className="flex flex-col sm:flex-row justify-center gap-6">
               <Button
                 id="global-eventbrite-trigger"
                 size="lg"
                 className="bg-transparent hover:bg-beige-dark/90 hover:text-black text-white hover:shadow-sm px-12 py-6 rounded-none font-semibold tracking-wide uppercase md:text-lg text-base border-1 border-beige-dark transition-all duration-300">
                 Secure your spot
               </Button>
-              {/* <Button size="lg" variant="outline" className="border-1 border-white text-white hover:bg-white hover:text-black px-12 py-6 rounded-none font-bold tracking-widest uppercase text-lg transition-all duration-300">
-                VISIT US
-              </Button> */}
-            </div>
+            </div> */}
 
             {/* Stats - Subtly offset */}
-            <div
+            {/* <div
               className="grid grid-cols-3 gap-8 pt-16 mt-16 border-t border-white/20 will-change-transform"
               style={{ transform: `translate3d(0, calc(var(--scroll-y) * 0.12), 0)` }}
             >
               <DayCounter targetDate="2026-05-30" label="Days Left" />
               <StatBlock value="11 AM" label="Start time" />
               <StatBlock value="NO" label="Virtual" />
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

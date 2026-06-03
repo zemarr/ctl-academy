@@ -59,7 +59,7 @@ export default function RootLayout({
       className={cn("h-full", "antialiased", geistSans.variable, geistMono.variable, "font-sans", inter.variable)}
     >
       <body className="min-h-full flex flex-col">
-        <EventbriteInitializer />
+        {/* <EventbriteInitializer /> */}
         <div className="min-h-screen bg-background overflow-x-hidden relative">
           <Header />
           {children}

@@ -17,7 +17,7 @@ export default function Footer() {
   // ];
 
   return (
-    <footer id="contact" className="bg-linear-to-br from-muted/40 to-secondary/30 py-20 relative">
+    <footer id="contact" className="bg-linear-to-tl from-muted/40 to-secondary py-20 relative">
       <div className="max-w-screen-2xl mx-auto px-6 lg:px-12">
         <div className="grid lg:grid-cols-4 gap-16 mb-16">
           {/* Brand */}

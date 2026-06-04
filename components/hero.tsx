@@ -57,7 +57,7 @@ export default function Hero() {
           transform: `translate3d(0, calc(var(--scroll-y) * 0.4), 0)`,
         }}
       >
-        <div className="absolute inset-0 bg-linear-to-br from-black/50 via-black/60 to-black/80 z-10" />
+        <div className="absolute inset-0 bg-linear-to-t from-black/50 via-black/60 to-black/80 z-10" />
         <Image
           src={CTLHeroImage.src}
           blurDataURL={CTLHeroImage.blurDataURL}

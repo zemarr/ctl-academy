@@ -22,6 +22,7 @@ export default function Header() {
     { label: "HOME", href: "/#home" },
     { label: "ABOUT", href: "/#about" },
     { label: "WORKSHOP", href: "/#workshop" },
+    { label: "GALLERY", href: "/#gallery" },
     // { label: "JOIN US", href: "/#location" },
     // { label: "CONTACT", href: "#contact" },
   ];

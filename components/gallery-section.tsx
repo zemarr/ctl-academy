@@ -21,7 +21,12 @@ const projects = [
   { id: 4, img: p4, title: "Maison Lyon", place: "WEMBLEY, UK", category: "2026" as Cat, span: "md:row-span-2 row-span-0 md:col-span-4 col-span-6" },
 ];
 
-// const cats: Cat[] = ["All", "2026", "2025", "2024"];
+const cats: Cat[] = [
+  "All",
+  "2026",
+  //  "2025",
+  //  "2024"
+];
 
 // motion-enabled Next.js Link component
 const MotionLink = motion.create(Link);
@@ -51,7 +56,7 @@ export function GallerySection() {
                 <span className="tracking-tight">Shots</span>{" "} from our workshops
               </h2>
             </div>
-            {/* <div className="flex flex-wrap gap-2">
+            <div className="flex flex-wrap gap-2">
               {cats.map((c) => (
                 <button
                   key={c}
@@ -71,7 +76,7 @@ export function GallerySection() {
                   <span className="relative">{c}</span>
                 </button>
               ))}
-            </div> */}
+            </div>
           </div>
         </FadeIn>
 

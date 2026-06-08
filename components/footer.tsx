@@ -5,9 +5,9 @@ import Image from "next/image";
 
 export default function Footer() {
   const quickLinks = [
-    { label: "HOME", href: "#home" },
-    { label: "ABOUT", href: "#about" },
-    { label: "WORKSHOP", href: "#workshop" },
+    { label: "HOME", href: "/#home" },
+    { label: "ABOUT", href: "/#about" },
+    { label: "WORKSHOP", href: "/#workshop" },
     { label: "GALLERY", href: "/#gallery" },
     // { label: "JOIN US", href: "#location" },
   ];

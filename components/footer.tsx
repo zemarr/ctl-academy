@@ -8,7 +8,8 @@ export default function Footer() {
     { label: "HOME", href: "#home" },
     { label: "ABOUT", href: "#about" },
     { label: "WORKSHOP", href: "#workshop" },
-    { label: "JOIN US", href: "#location" },
+    { label: "GALLERY", href: "/#gallery" },
+    // { label: "JOIN US", href: "#location" },
   ];
 
   // const socialLinks = [
@@ -17,7 +18,7 @@ export default function Footer() {
   // ];
 
   return (
-    <footer id="contact" className="bg-linear-to-br from-muted/40 to-secondary/30 py-20 relative">
+    <footer id="contact" className="bg-linear-to-tl from-muted/40 to-secondary py-20 relative">
       <div className="max-w-screen-2xl mx-auto px-6 lg:px-12">
         <div className="grid lg:grid-cols-4 gap-16 mb-16">
           {/* Brand */}
@@ -113,10 +114,10 @@ export default function Footer() {
           <div className="flex flex-col md:flex-row justify-between items-center gap-6">
             <p className="text-muted-foreground font-bold uppercase tracking-wide">
               {/* &copy; {new Date().getFullYear()} CUE THE LIGHT ACADEMY. ALL RIGHTS RESERVED. */}
-              &copy; 2025 CUE THE LIGHT ACADEMY. ALL RIGHTS RESERVED.
+              &copy; 2025-{new Date().getFullYear()} CUE THE LIGHT ACADEMY. ALL RIGHTS RESERVED.
             </p>
             <div className="flex items-center gap-8 text-muted-foreground text-sm font-medium uppercase tracking-wide">
-              <a href="https://instagram.com/iamzemar" target="_blank">Built with ♥️ by zemar</a>
+              <a href="https://elmonstudio.com" target="_blank">Built with ♥️ by Elmon Studio</a>
             </div>
           </div>
         </div>

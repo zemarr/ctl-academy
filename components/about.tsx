@@ -92,7 +92,7 @@ export default function About() {
 
         <motion.div
           style={{ y: footerY }}
-          className="md:bg-linear-to-r bg-linear-to-b from-white/40 to-beige-dark/30 p-4 lg:p-20 relative overflow-hidden"
+          className="md:bg-linear-to-b bg-linear-to-b from-white/40 to-beige-dark/30 p-4 lg:p-20 relative overflow-hidden"
         >
           <div className="grid lg:grid-cols-2 gap-16 items-center relative z-10">
             <div className="h-full">

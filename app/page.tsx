@@ -1,11 +1,8 @@
 
 import About from "@/components/about";
-import Footer from "@/components/footer";
-import Header from "@/components/header";
+import { GallerySection } from "@/components/gallery-section";
 import Hero from "@/components/hero";
-import Location from "@/components/location";
 import Workshop from "@/components/workshop";
-import Image from "next/image";
 
 export default function Home() {
   return (
@@ -13,7 +10,8 @@ export default function Home() {
       <Hero />
       <About />
       <Workshop />
-      <Location />
+      <GallerySection />
+      {/* <Location /> */}
     </main>
   );
 }
